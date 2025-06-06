@@ -11,4 +11,3 @@ requests
 pillow
 python-multipart
 streamlit
-PIL
