@@ -103,3 +103,35 @@ Press `CTRL+C` in each terminal to stop the backend and frontend servers.
 ---
 
 **Enjoy discovering restaurants with TastyFind!**
+
+
+# TastyFind Deployment (Modal + Streamlit Cloud)
+
+## Deploy FastAPI Backend on Modal
+
+1. **Install Modal CLI**
+pip install modal
+
+
+2. **Authenticate with Modal**
+modal token new
+
+
+3. **Deploy your backend**
+modal deploy main.py
+
+- Note the deployed URL (e.g., `https://your-app.modal.run`).
+
+## Deploy Streamlit Frontend
+
+1. In `streamlit.py`, set:
+API_BASE_URL = "https://your-app.modal.run"
+
+2. Deploy `streamlit.py` (and `requirements.txt`) on Streamlit Cloud.
+
+---
+
+**Note:**  
+The first request to your Modal backend may take up to ~3 minutes as the container starts.  
+Subsequent queries will be fast (a few seconds).
+
