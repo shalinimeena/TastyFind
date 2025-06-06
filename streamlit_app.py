@@ -8,7 +8,7 @@ import base64
 
 
 # Configuration
-API_BASE_URL = "https://tasty-find-sz6j.vercel.app"  # Change this to your FastAPI server URL
+API_BASE_URL = "https://tastyfind-backend.streamlit.app"  # Change this to your FastAPI server URL
 
 # Page configuration
 st.set_page_config(
