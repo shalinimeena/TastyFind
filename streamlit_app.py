@@ -8,7 +8,7 @@ import base64
 
 
 # Configuration
-API_BASE_URL = "https://modal.com/apps/shalinimeena/main/ap-5nkG5uVwAtUBSpGZTcTSaL"  # Change this to your FastAPI server URL
+API_BASE_URL = "https://shalinimeena--tastyfind-app-fastapi-app.modal.run"  # Change this to your FastAPI server URL
 
 # Page configuration
 st.set_page_config(
